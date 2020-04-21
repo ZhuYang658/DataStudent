@@ -1,0 +1,154 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:项目_SMDB_学生管理系统_知识点总结.common"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+              ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+    <!--Flow Document 是 WPF 3.0 中提供的一个用于显示的新功能，它给了开发人员另一种选择去显示内容。Flow Document 通过类似 HTML 文档的格式定义文本流，但其功能更强大，并可提供明显更先进的布局选项。它内置了很多的元素，例如，Figure, Paragraph, Section, Floater, Table, InlineUIContainer 等可以通过不同的布局和元素控制其显示方式。并且，它支持对图像的支持，使其可以像在 HTML 中一样随意控制。再加上其默认支持的导航，显示模式，搜索，让其内容展现方式有了进一步的提高。-->
+    <FlowDocument.Resources>
+        <Style TargetType="Table" x:Key="BorderedTable">
+            <Setter Property="CellSpacing" Value="0"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="BorderBrush" Value="#000"></Setter>
+        </Style>
+        <Style TargetType="TableCell" x:Key="BorderedCell">
+            <Setter Property="BorderThickness" Value="0.5"></Setter>
+            <Setter Property="BorderBrush" Value="#000"></Setter>
+            <Setter Property="Padding" Value="3"></Setter>
+        </Style>
+    </FlowDocument.Resources>
+    <Table FontSize="16" Style="{StaticResource BorderedTable}">
+        <Table.Columns>
+            <TableColumn Width="80"></TableColumn>
+            <TableColumn Width="60"></TableColumn>
+            <TableColumn Width="150"></TableColumn>
+            <TableColumn Width="*"></TableColumn>
+        </Table.Columns>
+        <TableRowGroup>
+            <TableRow>
+                <TableCell RowSpan="6" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Image Source="{Binding ImgPath}"></Image>
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        姓        名
+                    </Paragraph>
+                </TableCell>
+                <TableCell ColumnSpan="2" LineHeight="30" Padding="0,10,0,0"  Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding StudentName}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        学        号
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="2" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding StudentId}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        性        别
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="2" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding Gender}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        年        龄
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="2" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding Age}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        生        日
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="2" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding Birthday,StringFormat='{}{0:yyyy-MM-dd}'}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        班        级
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="2" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding ClassName}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        打   卡   号
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="3" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding CardNo}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0"  Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        身份证号
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="3" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding StudentIdNo}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        联系电话
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="3" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding PhoneNumber}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell LineHeight="30" Padding="0,10,0,0" Style="{StaticResource BorderedCell}" TextAlignment="Center">
+                    <Paragraph>
+                        家庭住址
+                    </Paragraph>
+                </TableCell>
+                <TableCell LineHeight="30" Padding="0,10,0,0" ColumnSpan="3" Style="{StaticResource BorderedCell}">
+                    <Paragraph>
+                        <Run Text="{Binding StudentAddress}"></Run>
+                    </Paragraph>
+                </TableCell>
+            </TableRow>
+        </TableRowGroup>
+    </Table>
+</FlowDocument>

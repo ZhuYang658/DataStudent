@@ -1,0 +1,9 @@
+﻿<Application x:Class="项目_SMDB_学生管理系统_知识点总结.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:项目_SMDB_学生管理系统_知识点总结"
+             StartupUri="MainWindow.xaml"><!--主入口函数,运行从这个地方先进入-->
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

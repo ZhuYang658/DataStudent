@@ -1,0 +1,87 @@
+﻿<Window x:Class="项目_SMDB_学生管理系统_知识点总结.vview.CXScroeList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:项目_SMDB_学生管理系统_知识点总结.vview"
+        mc:Ignorable="d"
+        Title="成绩查询学生" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <!--导入资源-->
+    <Window.Resources>
+        <ResourceDictionary>
+            <!--添加动态资源-->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/common/DataGridStyle.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="27"></RowDefinition>
+            <RowDefinition Height="13"/>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="246*"></ColumnDefinition>
+            <ColumnDefinition Width="6"></ColumnDefinition>
+            <ColumnDefinition Width="242*"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="249*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtCX" Height="30" Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center" Width="90" HorizontalAlignment="Left" Margin="0,7,0,3" Grid.RowSpan="2"></TextBox>
+        <Button Name="Dancz" Click="Dancz_Click" Content="C#成绩" FontSize="18" Grid.Column="1" Grid.Row="1" Margin="95,4,0,0" HorizontalAlignment="Left" Width="70" Grid.RowSpan="2"/>
+        <Button Name="DBcz" Click="DBcz_Click" Content="DB成绩" Width="71" FontSize="18" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" Margin="0,4,5,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="txt1" Width="60" Height="30" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="4,4,0,6" Grid.RowSpan="2"/>
+        <Label Content="-到-" FontSize="18" Grid.Column="3" VerticalAlignment="Center" Margin="64,4,128,3" Height="33" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="txt2" Grid.Column="3" Height="30" Grid.Row="1" Width="56" VerticalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,4,72,0" Grid.RowSpan="2"/>
+        <Button x:Name="Duocx" Click="Duocx_Click" Content="C#范围成绩" Width="101" FontSize="18" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Left" Margin="175,4,0,3" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
+        <Button x:Name="DBFW" Click="DBFW_Click" Content="DB范围成绩" Width="106" FontSize="18" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Left" Margin="28,4,0,3" Grid.RowSpan="2"/>
+        <Button x:Name="Close" Click="Close_Click" Width="110" FontSize="18" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Right" Margin="0,4,0.333,6" BorderThickness="0" Background="AliceBlue" Grid.RowSpan="2">
+            <StackPanel Width="110">
+                <Image Source="/img1/ico/daoru.ico" Height="20" RenderTransformOrigin="0.933,0.458" Margin="10,0,80,0"/>
+                <Label Content="关闭成绩" Margin="25,-27,0,0" Height="30"/>
+            </StackPanel>
+        </Button>
+        <DataGrid x:Name="CjDataGrid" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="5" Margin="0,10,0.333,65.667">
+
+            <DataGrid.Columns>
+                <!--给DataGrid.Columns里面添加文本列，用来装字体的-->
+                <DataGridTextColumn Header="成绩编号" Width="100" Binding="{Binding Id}"></DataGridTextColumn>
+                <!--Binding给每一列赋对应的值-->
+                <DataGridTextColumn Header="学生" Width="100" Binding="{Binding StudentName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="C#成绩" Width="100" Binding="{Binding Csharp}"></DataGridTextColumn>
+                <DataGridTextColumn Header="DB成绩" Width="100" Binding="{Binding SQLServerDB}"></DataGridTextColumn>
+                <DataGridTextColumn Header="登录时间" Width="160" Binding="{Binding UpdateTime}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="CCPX" Tag="True" Click="CCPX_Click" Grid.Column="1" Grid.Row="3" Height="28" Background="#E3E3E3" Margin="0,1,164,1">
+            <DockPanel>
+                <Image x:Name="groupBySidImg" Source="/img1/ico/down.ico" Height="15"></Image>
+                <Label Content="C#排序"></Label>
+            </DockPanel>
+        </Button>
+        <Button x:Name="DBPX" Tag="True" Click="DBPX_Click" Grid.Column="1" Grid.Row="3" Width="82" Height="28" Background="#E3E3E3">
+            <DockPanel>
+                <Image x:Name="groupBySNameImg" Source="/img1/ico/sheng.ico" Height="15"></Image>
+                <Label Content="DB排序"></Label>
+            </DockPanel>
+        </Button>
+        <!--<Button x:Name="CJDAExcl" Click="CJDAExcl_Click" Grid.Column="3" Grid.Row="3" Width="100" Height="24" FontSize="12" Background="#E3E3E3" HorizontalAlignment="Left">
+            <DockPanel>
+                <Image Source="/img1/ico/print.ico" Height="15"></Image>
+                <Label Content="打印学员信息" Padding="0,0,0,0"></Label>
+            </DockPanel>
+        </Button>-->
+        <Button x:Name="OutExcl" Click="OutExcl_Click" Grid.Column="3" Grid.Row="3" Width="90" Height="24" FontSize="12" Background="#E3E3E3" Margin="-150,0,0,0">
+            <DockPanel>
+                <Image Source="/img1/ico/daochu.ico" Height="15"></Image>
+                <Label Content="导出到Excel" Padding="0,0,0,0"></Label>
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>

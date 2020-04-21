@@ -1,0 +1,14 @@
+﻿<Window x:Class="项目_SMDB_学生管理系统_知识点总结.AdminADDfrom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:项目_SMDB_学生管理系统_知识点总结"
+        mc:Ignorable="d"
+        Title="AdminADDfrom" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="nametxt" HorizontalAlignment="Left" Height="23" Margin="311,126,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="mima" HorizontalAlignment="Left" Height="23" Margin="311,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="yanzheng" Click="yanzheng_Click" Content="Button" HorizontalAlignment="Left" Margin="332,250,0,0" VerticalAlignment="Top" Width="99" Height="36"/>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="项目_SMDB_学生管理系统_知识点总结.View.PrintWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:项目_SMDB_学生管理系统_知识点总结.View"
+        mc:Ignorable="d"
+        Title="学员信息打印" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <!--使用 WPF 和 MySQL 搭建学生管理系统系统——打印功能-->
+        <!--XPS文件格式：打印的模版-->
+        <!--只定义了一个文档查看器。所以界面只有下图这样的一个空壳-->
+        <!--DocumentViewer，它只支持固定流文档，相当于只读。第二个参数是数据。(重点：可以这么理解，传入的第一个参数决定了表格的格式、属性和外观，传入的第二个参数决定了填入表格的内容)-->
+            <DocumentViewer Name="docViewer" ></DocumentViewer>
+    </Grid>
+</Window>
