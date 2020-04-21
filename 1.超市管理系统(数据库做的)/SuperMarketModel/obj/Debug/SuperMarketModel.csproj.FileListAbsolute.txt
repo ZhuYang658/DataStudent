@@ -1,0 +1,4 @@
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketModel\bin\Debug\SuperMarketModel.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketModel\bin\Debug\SuperMarketModel.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketModel\obj\Debug\SuperMarketModel.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketModel\obj\Debug\SuperMarketModel.pdb

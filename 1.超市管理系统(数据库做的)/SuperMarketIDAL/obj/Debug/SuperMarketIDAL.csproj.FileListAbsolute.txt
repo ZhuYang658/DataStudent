@@ -1,0 +1,8 @@
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\bin\Debug\SuperMarketIDAL.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\bin\Debug\SuperMarketIDAL.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\obj\Debug\SuperMarketIDAL.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\obj\Debug\SuperMarketIDAL.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\bin\Debug\SuperMarketModel.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\bin\Debug\SuperMarketModel.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\obj\Debug\SuperMarketIDAL.csprojAssemblyReference.cache
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketIDAL\obj\Debug\SuperMarketIDAL.csproj.CopyComplete

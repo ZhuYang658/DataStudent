@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F62168E-6BFC-4ED5-B7D7-057A0C3E9F45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperMarketBLL</RootNamespace>
+    <AssemblyName>SuperMarketBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="前台SuperMarketCashier\SelesPersonManager.cs" />
+    <Compile Include="前台SuperMarketCashier\SuperMarketMemberManager3.cs" />
+    <Compile Include="前台SuperMarketCashier\SuperMarketProductManager.cs" />
+    <Compile Include="后台SuperMarketManager\SuperMarketAdminManager.cs" />
+    <Compile Include="后台SuperMarketManager\SuperMarketLoginLogManager4.cs" />
+    <Compile Include="后台SuperMarketManager\SuperMarketMemberManager3.cs" />
+    <Compile Include="后台SuperMarketManager\SuperMarketProductManager2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuperMarketCommon\SuperMarketCommon.csproj">
+      <Project>{b5064a5e-c3bf-4fdc-9280-03853d27bc8d}</Project>
+      <Name>SuperMarketCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarketDAL\SuperMarketDAL.csproj">
+      <Project>{1e1a93c1-064a-4410-9369-2c6bfd5a2a87}</Project>
+      <Name>SuperMarketDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarketIBLL\SuperMarketIBLL.csproj">
+      <Project>{7215f7d8-de3c-47a0-a4df-c9708bd3cb88}</Project>
+      <Name>SuperMarketIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarketIDAL\SuperMarketIDAL.csproj">
+      <Project>{de1d8390-ad51-4475-85f5-fcb75aecc04b}</Project>
+      <Name>SuperMarketIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarketModel\SuperMarketModel.csproj">
+      <Project>{eda04f45-dff4-4874-b096-739c5134f618}</Project>
+      <Name>SuperMarketModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

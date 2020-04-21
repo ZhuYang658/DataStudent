@@ -1,0 +1,17 @@
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\SuperMarketCommon.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\SuperMarketCommon.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.SuperTextbox.resources
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.csproj.GenerateResource.cache
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\log4net.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\log4net.xml
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.csproj.CopyComplete
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\SuperMarketModel.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\SuperMarketModel.pdb
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.csprojAssemblyReference.cache
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\SuperMarketCommon.dll.config
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\EntityFramework.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\EntityFramework.xml
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\VS练习1\1VS练习2高级\1.超市管理系统(数据库做的)\SuperMarketCommon\obj\Debug\SuperMarketCommon.PageController日志翻页.resources
